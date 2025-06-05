@@ -1,50 +1,52 @@
 package ejercicio;
 
-public class Rectangulo implements Figura{
+public class Rectangulo implements Figura {
 
-    private double base;
-    private double altura;
+  private double base;
+  private double altura;
 
-    // metodo constructor
-    public Rectangulo(double base, double altura){
-        this.base = base;
-        this.altura = altura;
-    }
+  // metodo constructor
+  public Rectangulo(double base, double altura) {
+    this.base = base;
+    this.altura = altura;
+  }
 
-    // getters y setters
-    public double getBase(){
-        return base;
-    }
-    public void setBase(){
-        this.base = base;
-    }
+  // getters y setters
+  public double getBase() {
+    return base;
+  }
 
-    public double getAltura(){
-        return altura;
-    }
-    public void setAltura(double altura){
-        this.altura = altura;
-    }
+  public void setBase() {
+    this.base = base;
+  }
 
-    // metodos
-    @Override
-    public double CalcularArea() {
-        return base * altura;
-    }
+  public double getAltura() {
+    return altura;
+  }
 
-    @Override
-    public double CalcularPerimetro() {
-        return base*2 + altura*2;
-    }
+  public void setAltura(double altura) {
+    this.altura = altura;
+  }
 
-    @Override
-    public String toString(){
-        return "El rectángulo tiene \n" +
-                "Altura: " + altura + "cm \n" +
-                "Base: " + base + "cm \n";
-    }
+  // metodos
+  @Override
+  public double calcularArea() {
+    return base * altura;
+  }
 
-    public void mostrarMensaje(){
-        System.out.println(toString());
-    }
+  @Override
+  public double calcularPerimetro() {
+    return base * 2 + altura * 2;
+  }
+
+  @Override
+  public String toString() {
+    return "El rectángulo tiene \n"
+        + "Altura: " + altura + "cm \n"
+        + "Base: " + base + "cm \n";
+  }
+
+  public void mostrarMensaje() {
+    System.out.println(toString());
+  }
 }
