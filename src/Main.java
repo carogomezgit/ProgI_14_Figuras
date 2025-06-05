@@ -1,15 +1,33 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import ejercicio.Circulo;
+import ejercicio.Rectangulo;
+import org.w3c.dom.css.Rect;
+
+/**
+ * Crea una interfaz llamada Figura que contenga los siguientes métodos: double calcularArea(); double calcularPerimetro();
+ * Luego, crea dos clases que implementen esta interfaz:
+ * Circulo – que tenga como atributo el radio.
+ * Rectangulo – que tenga como atributos el ancho y el alto.
+ * Finalmente, crea una clase de prueba (Main) donde instancies un círculo y un rectángulo, y muestres por consola su área y perímetro.
+ */
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        Circulo circulo1 = new Circulo(3);
+
+        System.out.println(circulo1.toString());
+
+        Rectangulo rectangulo1 = new Rectangulo(20, 12);
+
+        System.out.println(rectangulo1.toString());
+
+        // calcular y mostrar resultado
+        System.out.println("El área de este circulo es: " + circulo1.CalcularArea() + "cm2");
+        System.out.println("El perímetro de este círculo es: " + circulo1.CalcularPerimetro() + "cm");
+
+        System.out.println("El área de este rectángulo es: " + rectangulo1.CalcularArea() + "cm2");
+        System.out.println("El perímetro de este rectángulo es: " + rectangulo1.CalcularPerimetro() + "cm");
+
+
+
     }
 }
