@@ -26,8 +26,5 @@ public class Main {
 
         System.out.println("El área de este rectángulo es: " + rectangulo1.CalcularArea() + "cm2");
         System.out.println("El perímetro de este rectángulo es: " + rectangulo1.CalcularPerimetro() + "cm");
-
-
-
     }
 }
